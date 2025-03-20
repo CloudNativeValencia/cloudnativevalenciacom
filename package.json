@@ -1,0 +1,15 @@
+{
+    "name": "cloudnativevalenciacom",
+    "version": "1.0.0",
+    "description": "https://cloudnativevalencia.com",
+    "main": "index.js",
+    "scripts": {
+      "shorten": "netlify-shortener"
+    },
+    "keywords": [],
+    "author": "Cloud Native Valencia",
+    "license": "MIT",
+    "devDependencies": {
+      "netlify-shortener": "^2.4.0"
+    }
+  }
