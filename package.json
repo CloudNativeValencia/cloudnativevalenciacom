@@ -4,12 +4,20 @@
     "description": "https://cloudnativevalencia.com",
     "main": "index.js",
     "scripts": {
-      "shorten": "netlify-shortener"
+        "shorten": "netlify-shortener"
     },
     "keywords": [],
     "author": "Cloud Native Valencia",
     "license": "MIT",
     "devDependencies": {
-      "netlify-shortener": "^2.4.0"
-    }
-  }
+        "netlify-shortener": "^2.4.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CloudNativeValencia/cloudnativevalenciacom.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CloudNativeValencia/cloudnativevalenciacom/issues"
+    },
+    "homepage": "https://github.com/CloudNativeValencia/cloudnativevalenciacom#readme"
+}
