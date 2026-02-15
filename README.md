@@ -28,16 +28,11 @@ Static website for the Cloud Native Valencia community, featuring YouTube integr
   - [CNCF Chapter](https://community.cncf.io/cloud-native-valencia/)
   - [Meetup](https://www.meetup.com/cloud-native-valencia/)
 
-### Speakers
-Featured speakers with profile photos, titles, bios, and social links:
-- Chad Crowell - Founder, KubeSkills
-- Diana Todea - Cloud Native Expert
-- Mario Vazquez - Cloud Native Expert
-
 ### Organizers
 The team behind Cloud Native Valencia:
 - Jade Lassery
 - Luiz Bernardo Levenhagen
+- Chad M. Crowell
 
 ### Sponsors
 Current sponsors supporting the community:
