@@ -300,6 +300,23 @@ img {
   transform: translateY(-1px);
 }
 
+.nav-social {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.nav-social a {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+.nav-social a:hover {
+  color: var(--color-primary);
+}
+
 .mobile-menu-toggle {
   display: flex;
   flex-direction: column;
