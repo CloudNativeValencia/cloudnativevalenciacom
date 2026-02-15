@@ -1,6 +1,9 @@
 # Cloud Native Valencia Website
 
 [https://cloudnativevalencia.com](https://cloudnativevalencia.com)  
+
+![cloud native valencia web cover](assets/cloudnativevalenciacom-hero.png)
+
 Static website for the Cloud Native Valencia community, featuring YouTube integration, speaker profiles, sponsor showcase, and links to community resources.
 
 ## Website Sections
