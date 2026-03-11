@@ -516,10 +516,119 @@ img {
 }
 
 /* ==========================================
-   VIDEOS SECTION
+   LATEST SECTION
    ========================================== */
 .videos-section {
   background: var(--color-bg-secondary);
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .latest-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.latest-col-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+}
+
+.latest-video-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.9rem;
+  font-size: var(--text-sm);
+}
+
+.news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.news-card {
+  background: var(--color-bg);
+  border-radius: var(--border-radius);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  transition: box-shadow var(--transition-fast);
+}
+
+.news-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.news-card h3 {
+  font-size: var(--text-base);
+  margin: var(--space-xs) 0 var(--space-xs);
+  color: var(--color-text-primary);
+}
+
+.news-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+  line-height: 1.5;
+}
+
+.news-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 50px;
+}
+
+.news-tag--event {
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--color-primary);
+}
+
+.news-tag--cfp {
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+}
+
+.news-tag--community {
+  background: rgba(245, 158, 11, 0.12);
+  color: #d97706;
+}
+
+.news-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: gap var(--transition-fast);
+}
+
+.news-link:hover {
+  gap: 0.5rem;
 }
 
 .subscribe-badge {
