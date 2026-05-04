@@ -616,6 +616,11 @@ img {
   color: #d97706;
 }
 
+.news-tag--past {
+  background: rgba(107, 114, 128, 0.12);
+  color: #6b7280;
+}
+
 .news-link {
   display: inline-flex;
   align-items: center;
