@@ -8,6 +8,9 @@
       <header class="blog-post-header">
         <div class="post-meta">
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{- with .Params.author }}
+          <span>{{ . }}</span>
+          {{- end }}
           {{- with index .Params.tags 0 }}
           <span class="post-tag">{{ . }}</span>
           {{- end }}
