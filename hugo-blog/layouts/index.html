@@ -11,6 +11,9 @@
       <li class="post-preview">
         <div class="post-meta">
           <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{- with index .Params.authors 0 }}
+          <a href="{{ "authors/" | relURL }}{{ . | urlize }}/" class="author-meta-link">{{ . }}</a>
+          {{- end }}
           {{- with index .Params.tags 0 }}
           <span class="post-tag">{{ . }}</span>
           {{- end }}
