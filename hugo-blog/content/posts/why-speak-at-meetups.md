@@ -2,7 +2,7 @@
 title: "Why You Should Submit a Talk to Your Local Meetup (Even If You Feel Unready)"
 date: 2026-03-22
 description: "The bar at a local meetup is not a conference keynote. It is a room of curious people who want to learn what you learned, in plain language, from someone who was recently in their shoes."
-author: "Chad M. Crowell"
+authors: ["Chad M. Crowell"]
 draft: false
 tags: ["Community"]
 ---

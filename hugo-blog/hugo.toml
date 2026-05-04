@@ -12,4 +12,5 @@ publishDir   = "../blog"
 
 # Only tags — no categories or other auto-generated taxonomy pages
 [taxonomies]
-  tag = "tags"
+  tag    = "tags"
+  author = "authors"

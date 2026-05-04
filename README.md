@@ -105,7 +105,7 @@ Paste the following front matter at the top of the file, fill in each field, the
 title: "Your Post Title Here"
 date: 2026-05-04
 description: "One sentence shown as the excerpt on the blog index."
-author: "Your Name"
+authors: ["Your Name"]
 draft: false
 tags: ["Community"]
 ---
@@ -118,7 +118,7 @@ Your post content here...
 | `title` | Displayed as the post heading and in the blog index |
 | `date` | Publication date in `YYYY-MM-DD` format |
 | `description` | Short excerpt shown on the blog index page |
-| `author` | Your name, displayed in the post metadata |
+| `authors` | Your name in a list — e.g. `["Chad M. Crowell"]`. Links to your author page at `/blog/authors/<your-name>/` |
 | `draft` | Set to `true` to save without publishing; change to `false` when ready |
 | `tags` | Category label shown next to the date — e.g. `["Kubernetes"]`, `["Community"]`, `["Career"]` |
 
