@@ -2,6 +2,7 @@
 title: "Between Job Survival: Staying Sharp in Cloud Native During a Career Transition"
 date: 2026-04-28
 description: "Getting laid off or choosing to leave a job is disorienting. Here is what actually helped me stay technically relevant, connected to the community, and sane during the gap."
+author: "Chad M. Crowell"
 draft: false
 tags: ["Career"]
 ---

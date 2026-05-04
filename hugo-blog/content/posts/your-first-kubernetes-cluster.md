@@ -2,6 +2,7 @@
 title: "Your First Kubernetes Cluster: What the Docs Do Not Tell You"
 date: 2026-04-10
 description: "The official documentation will get a cluster running. It will not tell you what breaks first, how to read a CrashLoopBackOff without panicking, or why your pod refuses to schedule."
+author: "Chad M. Crowell"
 draft: false
 tags: ["Kubernetes"]
 ---
