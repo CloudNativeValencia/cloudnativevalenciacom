@@ -28,7 +28,7 @@ Static website for the Cloud Native Valencia community, featuring YouTube integr
 - Three pillars: Community-Driven, Hands-On Learning, Production Focus
 - Connect with us links:
   - [LinkedIn](https://www.linkedin.com/company/cloud-native-valencia)
-  - [CNCF Chapter](https://community.cncf.io/cloud-native-valencia/)
+  - [CNCF Chapter](https://ocgroups.dev/cncf/group/y8z7qfd)
   - [Meetup](https://www.meetup.com/cloud-native-valencia/)
 
 ### Organizers
