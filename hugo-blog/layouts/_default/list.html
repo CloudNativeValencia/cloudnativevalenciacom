@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="container">
+  <div class="blog-header">
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <div class="blog-main">
+    <ul class="post-list">
+      {{- range .Pages.ByDate.Reverse }}
+      <li class="post-preview">
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{- with index .Params.tags 0 }}
+          <span class="post-tag">{{ . }}</span>
+          {{- end }}
+        </div>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="post-excerpt">{{ .Description }}</p>
+        <a href="{{ .Permalink }}" class="read-more">Read more →</a>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

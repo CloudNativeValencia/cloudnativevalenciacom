@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  {{- if .IsHome -}}
+    Blog | Cloud Native Valencia
+  {{- else -}}
+    {{ .Title }} | Cloud Native Valencia
+  {{- end -}}
+</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/styles.css">

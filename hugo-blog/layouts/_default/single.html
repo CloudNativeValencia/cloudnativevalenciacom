@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="container">
+  <div class="blog-main">
+    <article class="blog-post">
+
+      <a href="{{ .Site.BaseURL }}" class="back-link">← Back to Blog</a>
+
+      <header class="blog-post-header">
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+          {{- with index .Params.tags 0 }}
+          <span class="post-tag">{{ . }}</span>
+          {{- end }}
+        </div>
+        <h1>{{ .Title }}</h1>
+        {{- with .Description }}
+        <p class="post-dek">{{ . }}</p>
+        {{- end }}
+      </header>
+
+      <div class="blog-post-body">
+        {{ .Content }}
+      </div>
+
+    </article>
+  </div>
+</div>
+{{ end }}

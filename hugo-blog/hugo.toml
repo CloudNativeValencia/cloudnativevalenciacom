@@ -1,0 +1,15 @@
+baseURL      = "https://cloudnativevalencia.com/blog/"
+languageCode = "en-us"
+title        = "Blog | Cloud Native Valencia"
+publishDir   = "../blog"
+
+# Clean URLs: /blog/my-post/ derived from filename, not the full title
+[permalinks.page]
+  posts = "/:contentbasename/"
+
+[params]
+  description = "Thoughts on Kubernetes, cloud native, and building community."
+
+# Only tags — no categories or other auto-generated taxonomy pages
+[taxonomies]
+  tag = "tags"

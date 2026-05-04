@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# Build
+# ---------------------------------------------------------------------------
+[build]
+  # Run from repo root. Hugo writes its output to ../blog (i.e. blog/ here).
+  command   = "cd hugo-blog && hugo --cleanDestinationDir --minify --baseURL \"${DEPLOY_PRIME_URL:-https://cloudnativevalencia.com}/blog/\""
+  publish   = "."
+
+[build.environment]
+  # Pin to the same version used locally. Bump this when you upgrade.
+  HUGO_VERSION = "0.152.2"
+
+# ---------------------------------------------------------------------------
+# Headers
+# ---------------------------------------------------------------------------
+
+# Security baseline for every response
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options        = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy        = "strict-origin-when-cross-origin"
+    Permissions-Policy     = "camera=(), microphone=(), geolocation=()"
+
+# Short cache for HTML (content changes without filename changes)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Same for Hugo's clean-URL directories
+[[headers]]
+  for = "/blog/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Long cache for versioned/fingerprinted assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# ---------------------------------------------------------------------------
+# Redirects
+# ---------------------------------------------------------------------------
+
+# Block public access to the Hugo source directory
+[[redirects]]
+  from   = "/hugo-blog/*"
+  to     = "/"
+  status = 404
+  force  = true
