@@ -1,5 +1,7 @@
 # Cloud Native Valencia Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c81d0009-1ca9-4678-8731-9ecc005921f4/deploy-status)](https://app.netlify.com/projects/cloud-native-valencia/deploys)
+
 [https://cloudnativevalencia.com](https://cloudnativevalencia.com)  
 
 ![cloud native valencia web cover](assets/cloudnativevalenciacom-hero.png)
