@@ -47,6 +47,23 @@ function initScrollReveal() {
 }
 
 // ==========================================
+// HERO PHOTO CAROUSEL
+// ==========================================
+function initHeroCarousel() {
+  const slides = document.querySelectorAll('.hero-carousel-slide');
+  if (slides.length < 2) return;
+
+  let activeIndex = 0;
+  const rotationInterval = 4000;
+
+  setInterval(() => {
+    slides[activeIndex].classList.remove('is-active');
+    activeIndex = (activeIndex + 1) % slides.length;
+    slides[activeIndex].classList.add('is-active');
+  }, rotationInterval);
+}
+
+// ==========================================
 // STICKY CFP BUTTON VISIBILITY
 // ==========================================
 function initStickyCFP() {
@@ -424,6 +441,7 @@ function initLazyLoading() {
 function init() {
   // Core features
   initScrollReveal();
+  initHeroCarousel();
   initStickyCFP();
   initMobileMenu();
   initSmoothScroll();
