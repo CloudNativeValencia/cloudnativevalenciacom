@@ -679,15 +679,19 @@ img {
   transform: translateY(-2px);
 }
 
-.gallery-banner-thumb {
-  width: 72px;
-  height: 56px;
+.gallery-banner-collage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  width: 84px;
+  height: 64px;
   flex-shrink: 0;
   border-radius: var(--border-radius);
   overflow: hidden;
 }
 
-.gallery-banner-thumb img {
+.gallery-banner-collage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
