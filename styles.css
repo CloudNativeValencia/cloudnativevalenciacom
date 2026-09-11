@@ -913,11 +913,22 @@ img {
   display: none;
 }
 
-.cfp-visual svg {
+.cfp-photo-frame {
+  padding: 6px;
+  max-width: 320px;
+  margin: 0 auto;
+  border-radius: var(--border-radius-lg);
+  background: linear-gradient(135deg, #326CE5, #00D4AA);
+  box-shadow: var(--shadow-xl);
+}
+
+.cfp-photo-frame img {
+  display: block;
   width: 100%;
   height: auto;
-  max-width: 300px;
-  margin: 0 auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: calc(var(--border-radius-lg) - 4px);
 }
 
 @media (min-width: 768px) {
