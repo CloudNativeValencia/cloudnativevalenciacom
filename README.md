@@ -10,21 +10,24 @@ Static website for the Cloud Native Valencia community, featuring YouTube integr
 
 ## Website Sections
 
+### Header
+- Nav links: About, Sponsors, Submit CFP (in-page anchor), Join our Next Event (links to the CNCF community group)
+- Social icons: YouTube, LinkedIn, GitHub
+- Collapses to a hamburger menu on mobile
+
 ### Hero
 - Main headline and community tagline
 - Call-to-action buttons: "Submit Your Talk" (Sessionize) and "Sponsor" (GitHub Sponsors)
-- Animated decorative graphics
+- Rotating photo carousel of meetup photos (auto-advances every 4s)
 
-### Videos
-- Featured YouTube video embed
-- Subscribe button linking to YouTube channel
-- "View All Videos" button
+### Latest
+- Featured YouTube video embed with a Subscribe badge and "View All Videos" button
+- Photo Gallery banner linking out to the community's external photo site
+- News & Updates cards: Upcoming Event, Past Event, CFP Open, Community — each links out to the CNCF community group or the CFP section
 
 ### Call for Proposals (CFP)
-- Information about submitting talks
-- Deadlines and event details
-- Talk formats: 30min talks, 60min workshops, 5min lightning talks
-- Links to Sessionize for submissions
+- Deadline, event date, and talk formats (30min talks, workshops, 5min lightning talks)
+- "Submit Your Proposal" button links out to Sessionize — there is no on-site submission form
 
 ### About the Community
 - Three pillars: Community-Driven, Hands-On Learning, Production Focus
@@ -33,11 +36,14 @@ Static website for the Cloud Native Valencia community, featuring YouTube integr
   - [CNCF Chapter](https://ocgroups.dev/cncf/group/y8z7qfd)
   - [Meetup](https://www.meetup.com/cloud-native-valencia/)
 
+### Speakers
+- Present in the markup but currently commented out/hidden pending future speaker announcements.
+
 ### Organizers
 The team behind Cloud Native Valencia:
+- Chad M. Crowell
 - Jade Lassery
 - Luiz Bernardo Levenhagen
-- Chad M. Crowell
 
 ### Sponsors
 Current sponsors supporting the community:
@@ -48,13 +54,13 @@ Current sponsors supporting the community:
 "Become a Sponsor" button linking to GitHub Sponsors.
 
 ### Footer
-- Community links
+- Community links (YouTube, Submit a Talk, Speaker Badge, Contact)
 - Resource links (KubeSkills, Kubernetes Docs, CNCF)
 - Social media icons (YouTube, LinkedIn, CNCF Chapter, Meetup)
 
 ### Floating "Support Us" Button
-- Appears on scroll
-- Links to GitHub Sponsors page
+- Appears after scrolling past a threshold
+- Links to the GitHub Sponsors page (not the CFP)
 
 
 ## Accessibility
